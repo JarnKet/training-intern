@@ -1,8 +1,8 @@
-import React from 'react'
+import { Link } from "react-router-dom";
+import React from "react";
 
 function Card({ data }) {
-
-    console.log(data);
+  console.log(data);
 
   return (
     <div>
@@ -10,11 +10,11 @@ function Card({ data }) {
       {data?.map((val) => (
         <div>
           <img src={val.img} alt="" />
-          <p>Name :{val.name}</p>
+          <p>Name : {val.name}</p>
           <p>Age : {val.age}</p>
-          <p>City :{val.city}</p>
+          <p>City : {val.city}</p>
           <p>Followers : {val.followers}</p>
-          <p>Likes :{val.likes}</p>
+          <p>Likes : {val.likes}</p>
           <p>Photos : {val.photos}</p>
         </div>
       ))}
@@ -22,4 +22,4 @@ function Card({ data }) {
   );
 }
 
-export default Card
+export default Card;
